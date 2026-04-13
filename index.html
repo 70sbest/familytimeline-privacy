@@ -5,82 +5,483 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — Family Timeline</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
-        h1 { color: #1a1a2e; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #333; margin-top: 30px; }
-        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-        th { background: #f5f5f5; }
-        .updated { color: #888; font-size: 0.9em; }
-        .highlight { background: #f0f7ff; border-left: 4px solid #007aff; padding: 12px 16px; border-radius: 4px; margin: 15px 0; }
-        a { color: #007aff; }
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            max-width: 860px;
+            margin: 48px auto;
+            padding: 0 24px 60px;
+            color: #1c1c1e;
+            line-height: 1.7;
+            font-size: 16px;
+            background: #fff;
+        }
+        h1 { font-size: 2em; color: #1a1a2e; border-bottom: 2px solid #e5e5ea; padding-bottom: 12px; margin-bottom: 4px; }
+        h2 { font-size: 1.15em; color: #1a1a2e; margin-top: 40px; margin-bottom: 8px; }
+        h3 { font-size: 1em; color: #333; margin-top: 20px; margin-bottom: 4px; }
+        p { margin: 10px 0; }
+        ul, ol { margin: 10px 0 10px 24px; padding: 0; }
+        li { margin-bottom: 6px; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95em; }
+        th, td { border: 1px solid #d1d1d6; padding: 10px 12px; text-align: left; vertical-align: top; }
+        th { background: #f2f2f7; font-weight: 600; }
+        tr:nth-child(even) td { background: #fafafa; }
+        .meta { color: #8e8e93; font-size: 0.9em; margin-bottom: 32px; }
+        .highlight {
+            background: #f0f7ff;
+            border-left: 4px solid #007aff;
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .highlight strong { color: #0051a8; }
+        .warning {
+            background: #fff8e1;
+            border-left: 4px solid #f5a623;
+            padding: 14px 18px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        a { color: #007aff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .toc { background: #f9f9fb; border: 1px solid #e5e5ea; border-radius: 8px; padding: 18px 24px; margin: 24px 0 36px; }
+        .toc h2 { margin-top: 0; font-size: 1em; color: #555; text-transform: uppercase; letter-spacing: 0.05em; }
+        .toc ol { margin: 0; }
+        .toc li { margin-bottom: 4px; font-size: 0.95em; }
+        .badge { display: inline-block; background: #e8f4e8; color: #1a7f37; font-size: 0.78em; font-weight: 600; padding: 2px 8px; border-radius: 12px; margin-left: 6px; vertical-align: middle; }
+        footer { margin-top: 60px; border-top: 1px solid #e5e5ea; padding-top: 20px; font-size: 0.85em; color: #8e8e93; }
+        @media (max-width: 600px) {
+            body { margin: 24px auto; font-size: 15px; }
+            h1 { font-size: 1.5em; }
+            table { font-size: 0.88em; }
+            th, td { padding: 8px; }
+        }
     </style>
 </head>
 <body>
 
 <h1>Privacy Policy — Family Timeline</h1>
-<p class="updated">Ultimo aggiornamento: aprile 2025</p>
+<p class="meta">
+    Ultimo aggiornamento: <strong>aprile 2026</strong> &nbsp;·&nbsp;
+    Versione app: 1.0 &nbsp;·&nbsp;
+    Lingua originale: italiano
+</p>
 
-<h2>1. Chi siamo</h2>
-<p>Family Timeline è un'app sviluppata da Stefano Bestoso. Per assistenza: <a href="/cdn-cgi/l/email-protection#88eee9e5e1e4f1fce1e5ede4e1e6edc8e1ebe4e7fdeca6ebe7e5"><span class="__cf_email__" data-cfemail="83e5e2eeeaeffaf7eaeee6efeaede6c3eae0efecf6e7ade0ecee">[email&#160;protected]</span></a></p>
-
-<h2>2. Principio fondamentale</h2>
-<div class="highlight">
-    <strong>Family Timeline non raccoglie, non trasmette e non archivia alcun dato su server propri dello sviluppatore.</strong> Tutti i dati inseriti nell'app rimangono esclusivamente sul dispositivo dell'utente e, se abilitato, nel proprio account iCloud privato.
+<!-- INDICE -->
+<div class="toc">
+    <h2>Indice</h2>
+    <ol>
+        <li><a href="#s1">Titolare del trattamento</a></li>
+        <li><a href="#s2">Principio fondamentale e base giuridica</a></li>
+        <li><a href="#s3">Categorie di dati trattati e luogo di archiviazione</a></li>
+        <li><a href="#s4">Finalità del trattamento</a></li>
+        <li><a href="#s5">Permessi richiesti al sistema operativo</a></li>
+        <li><a href="#s6">Servizi e API di terze parti</a></li>
+        <li><a href="#s7">Dati relativi a minori (COPPA e normativa UE)</a></li>
+        <li><a href="#s8">Backup, esportazione e sicurezza</a></li>
+        <li><a href="#s9">Conservazione e cancellazione dei dati</a></li>
+        <li><a href="#s10">Trasferimento internazionale dei dati</a></li>
+        <li><a href="#s11">Diritti dell'interessato (GDPR artt. 15–22)</a></li>
+        <li><a href="#s12">Reclami all'autorità di controllo</a></li>
+        <li><a href="#s13">Modifiche alla presente policy</a></li>
+        <li><a href="#s14">Contatti</a></li>
+    </ol>
 </div>
 
-<h2>3. Dati trattati e dove risiedono</h2>
+<!-- 1 -->
+<h2 id="s1">1. Titolare del trattamento</h2>
+<p>
+    <strong>Titolare del trattamento dei dati personali</strong> ai sensi del Regolamento UE 2016/679 (GDPR) è:
+</p>
+<p>
+    Stefano Bestoso<br>
+    Email: <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a><br>
+    App: <strong>Family Timeline</strong> (Bundle ID: <code>com.Stefano-Bestoso.FamilyTimeline</code>)<br>
+    Piattaforma: Apple App Store (iOS/iPadOS)
+</p>
+<p>
+    Non è stato nominato un Responsabile della Protezione dei Dati (DPO) in quanto il trattamento non rientra nelle fattispecie di cui all'art. 37 GDPR che lo rendono obbligatorio.
+</p>
+
+<!-- 2 -->
+<h2 id="s2">2. Principio fondamentale e base giuridica</h2>
+<div class="highlight">
+    <strong>Family Timeline non raccoglie, non trasmette e non archivia alcun dato personale su server propri del titolare.</strong>
+    Tutti i dati inseriti dall'utente risiedono esclusivamente sul dispositivo dell'utente e, ove l'utente lo abiliti volontariamente, nel proprio account iCloud privato gestito da Apple Inc.
+</div>
+<p>
+    Il trattamento è basato sul <strong>consenso esplicito dell'utente</strong> (art. 6, par. 1, lett. a GDPR), manifestato attraverso l'atto volontario di installare e utilizzare l'applicazione, e sull'<strong>esecuzione di un contratto</strong> (art. 6, par. 1, lett. b GDPR) di cui l'utente è parte, ovvero il contratto di licenza d'uso (EULA) accettato al momento dell'acquisto/download sull'App Store.
+</p>
+<p>
+    Per i dati relativi a minori, la base giuridica è il consenso del genitore o tutore legale (art. 8 GDPR; art. 13 D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018).
+</p>
+
+<!-- 3 -->
+<h2 id="s3">3. Categorie di dati trattati e luogo di archiviazione</h2>
+<p>
+    L'app tratta esclusivamente i dati che l'utente inserisce volontariamente. Non vi è raccolta automatica di dati (no telemetria, no analytics, no crash reporting di terze parti).
+</p>
 <table>
-    <tr><th>Tipo di dato</th><th>Dove viene archiviato</th></tr>
-    <tr><td>Profili bambini (nome, data di nascita, foto)</td><td>Dispositivo / iCloud privato dell'utente</td></tr>
-    <tr><td>Voci del diario, ricordi, note</td><td>Dispositivo / iCloud privato dell'utente</td></tr>
-    <tr><td>Foto e video</td><td>Dispositivo / iCloud privato dell'utente</td></tr>
-    <tr><td>Dati genitori e familiari</td><td>Dispositivo / iCloud privato dell'utente</td></tr>
-    <tr><td>Posizione geografica (da metadati EXIF)</td><td>Dispositivo / iCloud privato dell'utente</td></tr>
-    <tr><td>Attività sportive e scolastiche</td><td>Dispositivo / iCloud privato dell'utente</td></tr>
-    <tr><td>Ricette e menu</td><td>Dispositivo / iCloud privato dell'utente</td></tr>
-    <tr><td>Preferenze e impostazioni</td><td>Dispositivo dell'utente</td></tr>
+    <tr>
+        <th>Categoria di dato</th>
+        <th>Esempi</th>
+        <th>Luogo di archiviazione</th>
+    </tr>
+    <tr>
+        <td>Profili bambini</td>
+        <td>Nome, data di nascita, foto profilo</td>
+        <td>Dispositivo / iCloud privato utente</td>
+    </tr>
+    <tr>
+        <td>Diario e ricordi</td>
+        <td>Testi, note, date, luoghi, umore</td>
+        <td>Dispositivo / iCloud privato utente</td>
+    </tr>
+    <tr>
+        <td>Contenuti multimediali</td>
+        <td>Foto, video, audio</td>
+        <td>Dispositivo / iCloud privato utente</td>
+    </tr>
+    <tr>
+        <td>Dati familiari</td>
+        <td>Nomi e ruoli di genitori/tutori/familiari</td>
+        <td>Dispositivo / iCloud privato utente</td>
+    </tr>
+    <tr>
+        <td>Dati di localizzazione</td>
+        <td>Coordinate GPS associate a ricordi (se l'utente lo autorizza)</td>
+        <td>Dispositivo / iCloud privato utente</td>
+    </tr>
+    <tr>
+        <td>Attività scolastiche</td>
+        <td>Voti, istituti, ordini scolastici</td>
+        <td>Dispositivo / iCloud privato utente</td>
+    </tr>
+    <tr>
+        <td>Attività sportive</td>
+        <td>Sport, società, certificati medici (date scadenza)</td>
+        <td>Dispositivo / iCloud privato utente</td>
+    </tr>
+    <tr>
+        <td>Ricette e menu</td>
+        <td>Ricette salvate, menu familiari</td>
+        <td>Dispositivo / iCloud privato utente</td>
+    </tr>
+    <tr>
+        <td>Viaggi e itinerari</td>
+        <td>Destinazioni, date, foto di viaggio</td>
+        <td>Dispositivo / iCloud privato utente</td>
+    </tr>
+    <tr>
+        <td>Preferenze e impostazioni</td>
+        <td>Tema, lingua, impostazioni di sicurezza</td>
+        <td>Dispositivo dell'utente</td>
+    </tr>
+    <tr>
+        <td>Dati di autenticazione locale</td>
+        <td>Codice PIN (memorizzato cifrato), biometria (gestita da iOS)</td>
+        <td>Dispositivo dell'utente (Secure Enclave iOS)</td>
+    </tr>
 </table>
-<p>Lo sviluppatore non ha accesso a nessuno di questi dati in nessun momento.</p>
+<p>
+    <strong>Il titolare non ha accesso tecnico a nessuno dei dati sopra elencati in nessun momento.</strong>
+</p>
 
-<h2>4. Permessi richiesti</h2>
-<p>L'app richiede i seguenti permessi, usati esclusivamente per le funzioni indicate:</p>
+<!-- 4 -->
+<h2 id="s4">4. Finalità del trattamento</h2>
+<p>I dati sono trattati esclusivamente per le seguenti finalità:</p>
 <ul>
-    <li><strong>Fotocamera</strong> — per scattare foto direttamente nell'app</li>
-    <li><strong>Foto</strong> — per importare foto e video dalla libreria</li>
-    <li><strong>Microfono</strong> — per registrare video con audio</li>
-    <li><strong>Posizione (durante l'uso)</strong> — per associare un luogo ai ricordi, se l'utente lo desidera</li>
-    <li><strong>Calendario</strong> — per visualizzare gli eventi del calendario iOS nell'agenda</li>
-    <li><strong>Face ID / Touch ID</strong> — per proteggere l'accesso all'app con biometria</li>
-    <li><strong>Notifiche</strong> — per promemoria relativi a certificati sportivi e altri eventi</li>
+    <li><strong>Erogazione del servizio</strong>: consentire all'utente di creare, visualizzare e gestire i ricordi familiari all'interno dell'app.</li>
+    <li><strong>Sincronizzazione opzionale</strong>: se l'utente abilita iCloud, i dati vengono sincronizzati tra i propri dispositivi tramite il database privato CloudKit dell'utente.</li>
+    <li><strong>Sicurezza locale</strong>: proteggere l'accesso all'app tramite PIN o biometria.</li>
+    <li><strong>Backup e portabilità</strong>: consentire all'utente di esportare i propri dati in formato ZIP.</li>
+    <li><strong>Ricerca informazioni esterne</strong>: effettuare ricerche su API di terze parti (film, libri) su esplicita richiesta dell'utente (vedi sezione 6).</li>
 </ul>
-<p>Tutti i permessi sono opzionali. L'app funziona anche senza concederli.</p>
+<p>
+    <strong>Non esiste alcuna finalità di profilazione, marketing, pubblicità, analisi comportamentale o cessione a terzi.</strong>
+</p>
 
-<h2>5. Servizi di terze parti</h2>
-<p>L'app utilizza le seguenti API esterne in sola lettura:</p>
+<!-- 5 -->
+<h2 id="s5">5. Permessi richiesti al sistema operativo</h2>
+<p>
+    L'app può richiedere i seguenti permessi iOS. Ogni permesso viene richiesto solo al momento dell'utilizzo della funzione corrispondente e può essere revocato in qualsiasi momento da <em>Impostazioni → Privacy</em> del dispositivo.
+</p>
+<table>
+    <tr>
+        <th>Permesso</th>
+        <th>Utilizzo nell'app</th>
+        <th>Obbligatorio?</th>
+    </tr>
+    <tr>
+        <td>Fotocamera (<code>NSCameraUsageDescription</code>)</td>
+        <td>Scattare foto direttamente dall'app per diari e ricordi</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Libreria foto (<code>NSPhotoLibraryUsageDescription</code>)</td>
+        <td>Importare foto e video dalla libreria di sistema</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Microfono (<code>NSMicrophoneUsageDescription</code>)</td>
+        <td>Registrare audio nei video dell'app</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Posizione durante l'uso (<code>NSLocationWhenInUseUsageDescription</code>)</td>
+        <td>Associare un luogo ai ricordi se l'utente lo richiede esplicitamente</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Calendario (<code>NSCalendarsUsageDescription</code>)</td>
+        <td>Mostrare gli eventi del calendario iOS nella sezione agenda</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Face ID / Touch ID (<code>NSFaceIDUsageDescription</code>)</td>
+        <td>Sblocco biometrico dell'app; gestito interamente da iOS Secure Enclave</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>Notifiche (<code>NSUserNotificationsUsageDescription</code>)</td>
+        <td>Promemoria per scadenze (certificati sportivi, eventi familiari)</td>
+        <td>No</td>
+    </tr>
+</table>
+<p>
+    <strong>Nessun dato raccolto tramite questi permessi viene trasmesso a server esterni.</strong>
+</p>
+
+<!-- 6 -->
+<h2 id="s6">6. Servizi e API di terze parti</h2>
+<p>
+    L'app si connette ai seguenti servizi esclusivamente su <strong>esplicita azione dell'utente</strong> (es. digitare un titolo nel campo di ricerca). Le connessioni sono in <strong>sola lettura</strong>: nessun dato personale dell'utente viene inviato a questi servizi.
+</p>
+
+<h3>6.1 The Movie Database (TMDB)</h3>
+<p>
+    Utilizzato per cercare informazioni su film e serie TV. TMDB riceve unicamente i termini di ricerca digitati dall'utente (es. titolo di un film). Nessun dato personale identificativo viene trasmesso.
+</p>
 <ul>
-    <li><strong>The Movie Database (TMDB)</strong> — per cercare informazioni su film. TMDB riceve solo i termini di ricerca digitati dall'utente. <a href="https://www.themoviedb.org/privacy-policy" target="_blank">Privacy Policy TMDB</a></li>
-    <li><strong>Apple MapKit</strong> — per visualizzare mappe geografiche. <a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy Apple</a></li>
-    <li><strong>Apple iCloud / CloudKit</strong> — per la sincronizzazione opzionale tra dispositivi dello stesso utente. I dati sono nel database privato iCloud dell'utente, non visibili allo sviluppatore. <a href="https://www.apple.com/legal/privacy/" target="_blank">Privacy Policy Apple</a></li>
-    <li><strong>Google Books API</strong> — per cercare informazioni sui libri (titolo, autore, copertina). Google riceve solo i termini di ricerca digitati dall'utente. <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy Google</a></li>
-    <li><strong>Open Library (Internet Archive)</strong> — per le copertine dei libri non trovate su Google Books. Riceve solo il codice ISBN del libro cercato. <a href="https://archive.org/about/terms.php" target="_blank">Privacy Policy Open Library</a></li>
+    <li>Sito: <a href="https://www.themoviedb.org/" target="_blank" rel="noopener">themoviedb.org</a></li>
+    <li><a href="https://www.themoviedb.org/privacy-policy" target="_blank" rel="noopener">Privacy Policy TMDB</a></li>
+    <li><a href="https://www.themoviedb.org/api-terms-of-use" target="_blank" rel="noopener">Termini d'uso API TMDB</a></li>
+    <li>Sede: USA. Trasferimento dati verso paese terzo (USA) ai sensi dell'art. 46 GDPR — accordo di trasferimento standard.</li>
 </ul>
-<p>L'app <strong>non utilizza</strong> analytics, tracciamento pubblicitario o SDK di terze parti.</p>
+<p><em>Nota: "This product uses the TMDB API but is not endorsed or certified by TMDB."</em></p>
 
-<h2>6. Dati dei minori</h2>
-<p>Family Timeline è progettata per tenere traccia della crescita dei propri figli. I dati relativi ai minori sono inseriti dai genitori o tutori e rimangono esclusivamente sotto il loro controllo. Lo sviluppatore non raccoglie né ha accesso a nessun dato relativo a minori.</p>
-<p>L'app è destinata all'uso da parte di adulti (genitori/tutori). Non è rivolta direttamente ai minori.</p>
-
-<h2>7. Backup e sicurezza</h2>
-<p>L'app offre una funzione di backup locale in formato ZIP. Il file è salvato dove l'utente sceglie (dispositivo, iCloud Drive, ecc.). Lo sviluppatore non ha accesso a questi backup.</p>
-
-<h2>8. Diritti dell'utente</h2>
-<p>Poiché tutti i dati sono archiviati localmente, l'utente ha pieno controllo:</p>
+<h3>6.2 Google Books API</h3>
+<p>
+    Utilizzato per cercare informazioni su libri (titolo, autore, copertina, ISBN). Google riceve unicamente i termini di ricerca digitati dall'utente.
+</p>
 <ul>
-    <li><strong>Accesso</strong>: i dati sono sempre accessibili nell'app</li>
-    <li><strong>Cancellazione</strong>: eliminare l'app rimuove tutti i dati locali. I dati iCloud si eliminano dalle Impostazioni iCloud del dispositivo</li>
-    <li><strong>Portabilità</strong>: la funzione di backup esporta tutti i dati in formato ZIP</li>
+    <li>Sito: <a href="https://books.google.com/" target="_blank" rel="noopener">books.google.com</a></li>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy Google</a></li>
+    <li><a href="https://developers.google.com/books/terms" target="_blank" rel="noopener">Termini d'uso Google Books API</a></li>
+    <li>Sede: USA. Trasferimento dati verso paese terzo (USA). Google LLC aderisce al Data Privacy Framework EU-USA.</li>
 </ul>
 
-<h2>9. Modifiche a questa policy</h2>
-<p>Eventuali modifiche saranno pubblicate a questo URL con data aggiornata.<
+<h3>6.3 Open Library — Internet Archive</h3>
+<p>
+    Utilizzato come fonte alternativa per le copertine dei libri. Riceve esclusivamente il codice ISBN del libro cercato.
+</p>
+<ul>
+    <li>Sito: <a href="https://openlibrary.org/" target="_blank" rel="noopener">openlibrary.org</a></li>
+    <li><a href="https://archive.org/about/terms.php" target="_blank" rel="noopener">Termini Internet Archive</a></li>
+    <li>Sede: USA. Trasferimento dati verso paese terzo (USA).</li>
+</ul>
+
+<h3>6.4 Apple MapKit</h3>
+<p>
+    Utilizzato per visualizzare mappe geografiche all'interno dell'app. Apple non riceve dati identificativi dell'utente.
+</p>
+<ul>
+    <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy Apple</a></li>
+    <li><a href="https://www.apple.com/legal/privacy/en-ww/privacy-apple-maps-api/" target="_blank" rel="noopener">Privacy Apple Maps API</a></li>
+</ul>
+
+<h3>6.5 Apple iCloud / CloudKit</h3>
+<p>
+    Se l'utente abilita la sincronizzazione iCloud, i dati sono archiviati nel <strong>database privato CloudKit</strong> dell'utente, accessibile esclusivamente tramite il suo account Apple ID. Il titolare dell'app non ha accesso tecnico a questo database.
+</p>
+<ul>
+    <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy Apple</a></li>
+    <li><a href="https://www.apple.com/legal/internet-services/icloud/" target="_blank" rel="noopener">Termini del servizio iCloud</a></li>
+</ul>
+
+<div class="highlight">
+    <strong>L'app non utilizza</strong>: analytics di terze parti, SDK pubblicitari, tracciamento comportamentale, crash reporting di terze parti, reti sociali integrate, o qualsiasi altro servizio di raccolta dati.
+</div>
+
+<!-- 7 -->
+<h2 id="s7">7. Dati relativi a minori (COPPA e normativa UE)</h2>
+<p>
+    Family Timeline è un'applicazione progettata per consentire ai <strong>genitori e tutori legali</strong> di documentare la crescita dei propri figli. L'app <strong>non è destinata all'uso diretto da parte di minori di 13 anni</strong> e non raccoglie intenzionalmente dati direttamente da minori.
+</p>
+<p>
+    I dati relativi ai minori (nome, foto, date, attività) sono inseriti esclusivamente dai genitori/tutori e rimangono sotto il loro pieno controllo. Il titolare non raccoglie né ha accesso a tali dati.
+</p>
+<p>
+    In conformità con il <strong>Children's Online Privacy Protection Act (COPPA)</strong> statunitense e con le disposizioni dell'art. 8 GDPR, se veniamo a conoscenza di aver inavvertitamente ricevuto informazioni da un minore senza il consenso del genitore, provvederemo immediatamente all'eliminazione di tali informazioni. Per segnalazioni: <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a>.
+</p>
+<div class="warning">
+    <strong>Nota per i genitori:</strong> poiché tutti i dati risiedono localmente sul vostro dispositivo, avete pieno controllo sulla loro gestione. Si consiglia di proteggere l'accesso all'app con PIN o biometria (disponibile nelle Impostazioni dell'app).
+</div>
+
+<!-- 8 -->
+<h2 id="s8">8. Backup, esportazione e sicurezza</h2>
+<p>
+    L'app offre una funzione di <strong>backup manuale</strong> che esporta tutti i dati in un file ZIP. Il file viene salvato nel percorso scelto dall'utente (dispositivo, iCloud Drive, altro). Il titolare non ha accesso a tali file.
+</p>
+<p>
+    I dati archiviati localmente sul dispositivo beneficiano della protezione offerta da:
+</p>
+<ul>
+    <li>Cifratura del filesystem iOS (Data Protection API di Apple)</li>
+    <li>Secure Enclave per i dati biometrici</li>
+    <li>Codice PIN opzionale impostato dall'utente nell'app (stored in forma hash)</li>
+    <li>Blocco schermo del dispositivo</li>
+</ul>
+<p>
+    Il titolare non gestisce server e non è quindi responsabile di eventuali violazioni di sicurezza lato server.
+</p>
+
+<!-- 9 -->
+<h2 id="s9">9. Conservazione e cancellazione dei dati</h2>
+<p>
+    Poiché i dati risiedono sul dispositivo dell'utente, la loro conservazione è sotto il pieno controllo dell'utente stesso:
+</p>
+<ul>
+    <li><strong>Cancellazione singolo elemento</strong>: eliminabile direttamente nell'app in qualsiasi momento.</li>
+    <li><strong>Cancellazione completa</strong>: la disinstallazione dell'app rimuove tutti i dati locali dal dispositivo.</li>
+    <li><strong>Cancellazione dati iCloud</strong>: tramite <em>Impostazioni → [Nome utente] → iCloud → Gestisci spazio account</em> sul dispositivo.</li>
+</ul>
+<p>
+    Il titolare non conserva copie di dati personali e non è in grado di recuperarli una volta eliminati dall'utente.
+</p>
+
+<!-- 10 -->
+<h2 id="s10">10. Trasferimento internazionale dei dati</h2>
+<p>
+    I dati personali non vengono trasferiti dal titolare verso paesi terzi.
+</p>
+<p>
+    Alcune API di terze parti (TMDB, Google Books, Open Library) hanno sede negli USA. Le informazioni trasmesse a questi servizi sono limitate ai termini di ricerca inseriti dall'utente (nomi di film, titoli di libri, codici ISBN) e non costituiscono dati personali identificativi. Tali trasferimenti avvengono ai sensi dell'art. 49, par. 1, lett. b) GDPR (necessari per l'esecuzione del contratto su richiesta dell'interessato).
+</p>
+<p>
+    Per Apple (iCloud/CloudKit e MapKit), il trasferimento è coperto dall'adesione di Apple Inc. al Data Privacy Framework EU-USA e dalle Standard Contractual Clauses (SCC) approvate dalla Commissione Europea.
+</p>
+
+<!-- 11 -->
+<h2 id="s11">11. Diritti dell'interessato (GDPR artt. 15–22)</h2>
+<p>
+    In quanto interessato al trattamento, l'utente ha i seguenti diritti ai sensi del GDPR:
+</p>
+<table>
+    <tr>
+        <th>Diritto</th>
+        <th>Contenuto</th>
+        <th>Come esercitarlo</th>
+    </tr>
+    <tr>
+        <td><strong>Accesso</strong> (art. 15)</td>
+        <td>Ottenere conferma e copia dei dati trattati</td>
+        <td>I dati sono direttamente visibili e accessibili nell'app in ogni momento</td>
+    </tr>
+    <tr>
+        <td><strong>Rettifica</strong> (art. 16)</td>
+        <td>Correggere dati inesatti o incompleti</td>
+        <td>Modificabile direttamente nell'app</td>
+    </tr>
+    <tr>
+        <td><strong>Cancellazione</strong> (art. 17)</td>
+        <td>Ottenere la cancellazione dei dati ("diritto all'oblio")</td>
+        <td>Eliminabile nell'app oppure tramite disinstallazione</td>
+    </tr>
+    <tr>
+        <td><strong>Limitazione</strong> (art. 18)</td>
+        <td>Limitare il trattamento in determinate circostanze</td>
+        <td>Contattare <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a></td>
+    </tr>
+    <tr>
+        <td><strong>Portabilità</strong> (art. 20)</td>
+        <td>Ricevere i dati in formato strutturato e leggibile</td>
+        <td>Funzione di backup ZIP disponibile nell'app (Impostazioni → Backup)</td>
+    </tr>
+    <tr>
+        <td><strong>Opposizione</strong> (art. 21)</td>
+        <td>Opporsi al trattamento per motivi legittimi</td>
+        <td>Contattare <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a></td>
+    </tr>
+    <tr>
+        <td><strong>Revoca del consenso</strong> (art. 7)</td>
+        <td>Revocare il consenso in qualsiasi momento</td>
+        <td>Disinstallare l'app; revocare singoli permessi da Impostazioni iOS</td>
+    </tr>
+    <tr>
+        <td><strong>Non profilazione</strong> (art. 22)</td>
+        <td>Non essere sottoposto a decisioni automatizzate</td>
+        <td>Garantito: l'app non effettua profilazione né decisioni automatizzate</td>
+    </tr>
+</table>
+<p>
+    Per esercitare i diritti diversi da quelli esercitabili direttamente nell'app, scrivere a <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a>. Il titolare risponderà entro 30 giorni dalla ricezione della richiesta, come previsto dall'art. 12 GDPR.
+</p>
+
+<!-- 12 -->
+<h2 id="s12">12. Reclami all'autorità di controllo</h2>
+<p>
+    L'utente ha il diritto di proporre reclamo all'autorità di controllo competente. Per gli utenti italiani:
+</p>
+<p>
+    <strong>Garante per la protezione dei dati personali (Garante Privacy)</strong><br>
+    Piazza Venezia 11 — 00187 Roma<br>
+    Tel: +39 06 696771<br>
+    Sito: <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">www.garanteprivacy.it</a><br>
+    Email: <a href="mailto:garante@gpdp.it">garante@gpdp.it</a>
+</p>
+<p>
+    Per gli utenti di altri paesi UE, il reclamo può essere presentato all'autorità di protezione dei dati del proprio paese di residenza.
+</p>
+
+<!-- 13 -->
+<h2 id="s13">13. Modifiche alla presente policy</h2>
+<p>
+    Il titolare si riserva il diritto di modificare la presente policy in qualsiasi momento, in particolare in caso di aggiornamenti dell'app che introducano nuove funzionalità o integrazioni con servizi di terze parti.
+</p>
+<p>
+    Le modifiche saranno pubblicate a questo URL (<a href="https://70sbest.github.io/familytimeline-privacy/">https://70sbest.github.io/familytimeline-privacy/</a>) con data aggiornata. In caso di modifiche sostanziali, sarà fornita notifica tramite aggiornamento dell'app sull'App Store.
+</p>
+<p>
+    L'utilizzo continuato dell'app successivamente alla pubblicazione delle modifiche costituisce accettazione della policy aggiornata.
+</p>
+
+<!-- 14 -->
+<h2 id="s14">14. Contatti</h2>
+<p>
+    Per qualsiasi domanda relativa alla presente policy o al trattamento dei dati personali:
+</p>
+<p>
+    <strong>Stefano Bestoso</strong><br>
+    Email: <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a><br>
+    Oggetto consigliato: <em>"Privacy Policy — Family Timeline"</em>
+</p>
+<p>
+    Il titolare risponderà entro 30 giorni dalla ricezione della richiesta.
+</p>
+
+<footer>
+    <p>
+        &copy; 2026 Stefano Bestoso — Family Timeline &nbsp;|&nbsp;
+        Tutti i diritti riservati &nbsp;|&nbsp;
+        <a href="https://70sbest.github.io/familytimeline-privacy/">https://70sbest.github.io/familytimeline-privacy/</a>
+    </p>
+    <p>
+        Questa privacy policy è redatta in conformità con il Regolamento UE 2016/679 (GDPR),
+        il D.Lgs. 196/2003 (Codice Privacy italiano) come modificato dal D.Lgs. 101/2018,
+        il Children's Online Privacy Protection Act (COPPA) e le App Store Review Guidelines di Apple.
+    </p>
+</footer>
+
+</body>
+</html>
