@@ -74,7 +74,7 @@
         <li><a href="#s1">Titolare del trattamento</a></li>
         <li><a href="#s2">Principio fondamentale e base giuridica</a></li>
         <li><a href="#s3">Categorie di dati trattati e luogo di archiviazione</a></li>
-        <li><a href="#s4">Finalità del trattamento</a></li>
+        <li><a href="#s4">Assenza di trattamento da parte del titolare</a></li>
         <li><a href="#s5">Permessi richiesti al sistema operativo</a></li>
         <li><a href="#s6">Servizi e API di terze parti</a></li>
         <li><a href="#s7">Dati relativi a minori (COPPA e normativa UE)</a></li>
@@ -188,17 +188,15 @@
 </p>
 
 <!-- 4 -->
-<h2 id="s4">4. Finalità del trattamento</h2>
-<p>I dati sono trattati esclusivamente per le seguenti finalità:</p>
-<ul>
-    <li><strong>Erogazione del servizio</strong>: consentire all'utente di creare, visualizzare e gestire i ricordi familiari all'interno dell'app.</li>
-    <li><strong>Sincronizzazione opzionale</strong>: se l'utente abilita iCloud, i dati vengono sincronizzati tra i propri dispositivi tramite il database privato CloudKit dell'utente.</li>
-    <li><strong>Sicurezza locale</strong>: proteggere l'accesso all'app tramite PIN o biometria.</li>
-    <li><strong>Backup e portabilità</strong>: consentire all'utente di esportare i propri dati in formato ZIP.</li>
-    <li><strong>Ricerca informazioni esterne</strong>: effettuare ricerche su API di terze parti (film, libri) su esplicita richiesta dell'utente (vedi sezione 6).</li>
-</ul>
+<h2 id="s4">4. Assenza di trattamento da parte del titolare</h2>
+<div class="highlight">
+    <strong>Il titolare non tratta dati personali degli utenti.</strong> Tutti i dati inseriti nell'app risiedono esclusivamente sul dispositivo dell'utente e, se abilitato, nel suo account iCloud privato. Il titolare non ha accesso tecnico, non riceve, non archivia e non elabora tali dati in nessun momento e in nessuna forma.
+</div>
 <p>
-    <strong>Non esiste alcuna finalità di profilazione, marketing, pubblicità, analisi comportamentale o cessione a terzi.</strong>
+    L'app funziona interamente in locale: non esiste alcun server del titolare a cui i dati vengano inviati. Le uniche connessioni di rete che l'app stabilisce sono quelle verso le API di terze parti descritte nella sezione 6, attivate esclusivamente su azione esplicita dell'utente (es. ricerca di un film o di un libro), e verso i server Apple per la sincronizzazione iCloud privata dell'utente (se abilitata).
+</p>
+<p>
+    Non esiste alcuna finalità di trattamento da parte del titolare perché il trattamento non avviene. Le operazioni sui dati (inserimento, modifica, cancellazione, backup) sono eseguite interamente dall'utente, sul proprio dispositivo, senza intermediazione del titolare.
 </p>
 
 <!-- 5 -->
@@ -375,57 +373,47 @@
 <!-- 11 -->
 <h2 id="s11">11. Diritti dell'interessato (GDPR artt. 15–22)</h2>
 <p>
-    In quanto interessato al trattamento, l'utente ha i seguenti diritti ai sensi del GDPR:
+    Poiché il titolare <strong>non detiene né tratta</strong> dati personali degli utenti, i diritti previsti dagli artt. 15–22 GDPR (accesso, rettifica, cancellazione, limitazione, portabilità, opposizione) sono esercitabili <strong>direttamente dall'utente all'interno dell'app</strong>, senza necessità di coinvolgere il titolare.
 </p>
+<div class="highlight">
+    <strong>Il titolare non ha accesso tecnico ai dati degli utenti</strong> e non è quindi in grado di fornire copie, rettificare, cancellare o limitare dati su richiesta: semplicemente non li possiede. Questa non è una limitazione del servizio, ma una garanzia di privacy by design.
+</div>
 <table>
     <tr>
         <th>Diritto</th>
-        <th>Contenuto</th>
         <th>Come esercitarlo</th>
     </tr>
     <tr>
-        <td><strong>Accesso</strong> (art. 15)</td>
-        <td>Ottenere conferma e copia dei dati trattati</td>
-        <td>I dati sono direttamente visibili e accessibili nell'app in ogni momento</td>
+        <td><strong>Accesso</strong> (art. 15) — vedere i propri dati</td>
+        <td>I dati sono visibili e accessibili in ogni sezione dell'app in qualsiasi momento</td>
     </tr>
     <tr>
-        <td><strong>Rettifica</strong> (art. 16)</td>
-        <td>Correggere dati inesatti o incompleti</td>
-        <td>Modificabile direttamente nell'app</td>
+        <td><strong>Rettifica</strong> (art. 16) — correggere dati errati</td>
+        <td>Modificabile direttamente nell'app, in ogni sezione</td>
     </tr>
     <tr>
-        <td><strong>Cancellazione</strong> (art. 17)</td>
-        <td>Ottenere la cancellazione dei dati ("diritto all'oblio")</td>
-        <td>Eliminabile nell'app oppure tramite disinstallazione</td>
+        <td><strong>Cancellazione</strong> (art. 17) — diritto all'oblio</td>
+        <td>Eliminabile singolarmente nell'app, oppure tramite disinstallazione completa</td>
     </tr>
     <tr>
-        <td><strong>Limitazione</strong> (art. 18)</td>
-        <td>Limitare il trattamento in determinate circostanze</td>
-        <td>Contattare <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a></td>
-    </tr>
-    <tr>
-        <td><strong>Portabilità</strong> (art. 20)</td>
-        <td>Ricevere i dati in formato strutturato e leggibile</td>
-        <td>Funzione di backup ZIP disponibile nell'app (Impostazioni → Backup)</td>
-    </tr>
-    <tr>
-        <td><strong>Opposizione</strong> (art. 21)</td>
-        <td>Opporsi al trattamento per motivi legittimi</td>
-        <td>Contattare <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a></td>
+        <td><strong>Portabilità</strong> (art. 20) — esportare i propri dati</td>
+        <td>Funzione di backup ZIP in <em>Impostazioni → Backup &amp; Sincronizzazione</em></td>
     </tr>
     <tr>
         <td><strong>Revoca del consenso</strong> (art. 7)</td>
-        <td>Revocare il consenso in qualsiasi momento</td>
-        <td>Disinstallare l'app; revocare singoli permessi da Impostazioni iOS</td>
+        <td>Disinstallare l'app rimuove tutti i dati locali; i singoli permessi iOS si revocano da <em>Impostazioni → Privacy</em></td>
+    </tr>
+    <tr>
+        <td><strong>Limitazione e opposizione</strong> (artt. 18, 21)</td>
+        <td>Non applicabili al titolare poiché il titolare non tratta i dati. Per le API di terze parti, fare riferimento alle rispettive privacy policy (sezione 6)</td>
     </tr>
     <tr>
         <td><strong>Non profilazione</strong> (art. 22)</td>
-        <td>Non essere sottoposto a decisioni automatizzate</td>
-        <td>Garantito: l'app non effettua profilazione né decisioni automatizzate</td>
+        <td>Garantito strutturalmente: l'app non invia dati a server propri, quindi nessuna profilazione o decisione automatizzata è tecnicamente possibile</td>
     </tr>
 </table>
 <p>
-    Per esercitare i diritti diversi da quelli esercitabili direttamente nell'app, scrivere a <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a>. Il titolare risponderà entro 30 giorni dalla ricezione della richiesta, come previsto dall'art. 12 GDPR.
+    Per domande sull'architettura privacy dell'app o per segnalazioni, è possibile scrivere a <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a>. Il titolare risponderà entro 30 giorni, come previsto dall'art. 12 GDPR.
 </p>
 
 <!-- 12 -->
@@ -438,7 +426,7 @@
     Piazza Venezia 11 — 00187 Roma<br>
     Tel: +39 06 696771<br>
     Sito: <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">www.garanteprivacy.it</a><br>
-    Email: <a href="mailto:garante@gpdp.it">garante@gpdp.it</a>
+    Email: <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a>
 </p>
 <p>
     Per gli utenti di altri paesi UE, il reclamo può essere presentato all'autorità di protezione dei dati del proprio paese di residenza.
@@ -462,26 +450,4 @@
     Per qualsiasi domanda relativa alla presente policy o al trattamento dei dati personali:
 </p>
 <p>
-    <strong>Stefano Bestoso</strong><br>
-    Email: <a href="mailto:familytimeline@icloud.com">familytimeline@icloud.com</a><br>
-    Oggetto consigliato: <em>"Privacy Policy — Family Timeline"</em>
-</p>
-<p>
-    Il titolare risponderà entro 30 giorni dalla ricezione della richiesta.
-</p>
-
-<footer>
-    <p>
-        &copy; 2026 Stefano Bestoso — Family Timeline &nbsp;|&nbsp;
-        Tutti i diritti riservati &nbsp;|&nbsp;
-        <a href="https://70sbest.github.io/familytimeline-privacy/">https://70sbest.github.io/familytimeline-privacy/</a>
-    </p>
-    <p>
-        Questa privacy policy è redatta in conformità con il Regolamento UE 2016/679 (GDPR),
-        il D.Lgs. 196/2003 (Codice Privacy italiano) come modificato dal D.Lgs. 101/2018,
-        il Children's Online Privacy Protection Act (COPPA) e le App Store Review Guidelines di Apple.
-    </p>
-</footer>
-
-</body>
-</html>
+    <strong>Stefano Bestoso<
